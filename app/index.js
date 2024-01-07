@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import { SafeAreaView, Text, ActivityIndicator } from 'react-native'
-import { Stack, useRouter } from 'expo-router'
+import { Stack } from 'expo-router'
 import { COLORS } from '../constants'
 import { Footer, Header, Main } from '../components'
 import useFetch from '../hook/useFetch'
 
 const Home = () => {
-	const router = useRouter()
-
 	const [page, setPage] = useState(1)
 
-	const { data, infoData, isLoading, error, refetch } = useFetch({
+	const { data, isLoading, error } = useFetch({
 		endpoint: 'character/',
 		query: page,
 	})

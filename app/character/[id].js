@@ -1,29 +1,17 @@
-import React, { useState } from 'react'
-import {
-	Text,
-	View,
-	Image,
-	SafeAreaView,
-	ScrollView,
-	ActivityIndicator,
-	RefreshControl,
-} from 'react-native'
+import React from 'react'
+import { Text, Image, SafeAreaView, ActivityIndicator } from 'react-native'
 import { Stack, useRouter, useLocalSearchParams } from 'expo-router'
 import { ScreenHeaderBtn, CardDetail, Footer } from '../../components'
-import { SIZES, COLORS, icons, logos } from '../../constants'
+import { COLORS, icons, logos } from '../../constants'
 import useFetch from '../../hook/useFetch'
 
 const CardDetails = () => {
 	const params = useLocalSearchParams()
 	const router = useRouter()
 
-	const [refreshing, setRefreshing] = useState(false)
-
-	const { data, infoData, isLoading, error, refetch } = useFetch({
+	const { data, isLoading, error } = useFetch({
 		endpoint: `character/${params.id}`,
 	})
-
-	const onRefresh = () => {}
 
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
