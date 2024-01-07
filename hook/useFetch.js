@@ -22,8 +22,14 @@ const useFetch = ({ endpoint, query }) => {
 
 			const data = await response.json()
 
-			setData(data.results)
-			setInfoData(data.info)
+			if (data.results) {
+				setData(data.results)
+				setInfoData(data.info)
+			} else {
+				console.log('HEREEEEEEEEEEEEEEE', data)
+				console.log(data)
+				setData(data)
+			}
 		} catch (error) {
 			setError(error.message)
 			alert('An error has occured')

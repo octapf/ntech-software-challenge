@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
 	},
 	userName: {
 		fontFamily: FONT.regular,
-		fontSize: SIZES.large,
+		fontSize: SIZES.medium,
 		color: COLORS.secondary,
 	},
 	welcomeMessage: {
 		fontFamily: FONT.bold,
-		fontSize: SIZES.xLarge,
+		fontSize: SIZES.large,
 		color: COLORS.primary,
 		marginTop: 2,
 	},
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 	searchBtn: {
 		width: 50,
 		height: '100%',
-		backgroundColor: COLORS.tertiary,
+		backgroundColor: COLORS.secondary,
 		borderRadius: SIZES.medium,
 		justifyContent: 'center',
 		alignItems: 'center',

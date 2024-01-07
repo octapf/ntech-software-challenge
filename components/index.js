@@ -6,5 +6,15 @@ import Welcome from './common/welcome/Welcome'
 import Footer from './common/footer/Footer'
 import Header from './common/header/Header'
 import Main from './common/main/Main'
+import CardDetail from './common/cards/CardDetail'
 
-export { ScreenHeaderBtn, Card, CharList, Welcome, Footer, Header, Main }
+export {
+	ScreenHeaderBtn,
+	Card,
+	CharList,
+	Welcome,
+	Footer,
+	Header,
+	Main,
+	CardDetail,
+}

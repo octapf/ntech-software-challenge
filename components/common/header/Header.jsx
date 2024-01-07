@@ -5,6 +5,11 @@ import { COLORS, icons, logos } from '../../../constants'
 import ScreenHeaderBtn from './ScreenHeaderBtn'
 
 const Header = () => {
+	const handlePress = () => {
+		alert(`Ntech Software Challenge by Octavio Frangipani
+
+Enjoy the ride! ♥️`)
+	}
 	return (
 		<Stack.Screen
 			options={{
@@ -14,6 +19,7 @@ const Header = () => {
 					<ScreenHeaderBtn
 						iconUrl={icons.menu}
 						dimension='60%'
+						handlePress={handlePress}
 					/>
 				),
 				headerRight: () => (
