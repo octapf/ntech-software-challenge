@@ -4,9 +4,20 @@ Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native 
 
 ## 🚀 How to use
 
-```sh
-npx create-expo-app -e with-router
 ```
+Clone repository
+
+CD into folder >
+
+npm install
+
+npx expo start
+
+```
+
+Download Expo app from PlayStore & Scan QR code
+
+[`Expo app`](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en&gl=US)
 
 ## 📝 Notes
 
