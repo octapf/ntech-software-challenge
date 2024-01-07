@@ -8,7 +8,7 @@ const CharList = ({ chars }) => {
 
 	return (
 		<View style={styles.container}>
-			{chars.map((char) => {
+			{chars?.map((char) => {
 				return (
 					<TouchableOpacity
 						style={{ marginVertical: 5 }}
